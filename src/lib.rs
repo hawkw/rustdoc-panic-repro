@@ -1,5 +1,5 @@
 #[derive(Clone)]
-pub struct MyAcpiHandler;
+struct MyAcpiHandler;
 
 impl acpi::AcpiHandler for MyAcpiHandler {
     unsafe fn map_physical_region<T>(&self, _: usize, _: usize) -> acpi::PhysicalMapping<Self, T> {
